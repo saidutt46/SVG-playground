@@ -1,0 +1,49 @@
+.blue-eyes .eye-color {
+  fill: rgb(48, 104, 176);
+}
+
+.sad .mouth {
+  transform: rotate(180deg) scale(.8);
+  transform-origin: 360px 361px;
+}
+
+@keyframes moveEyes {
+  20% {
+    transform: translate(-18px, -15px);
+  }
+  40% {
+    transform: translate(0, 0);
+  }
+
+  65% {
+    transform: translate(18px, -15px);
+
+  }
+}
+
+.move-around .inner-eye-group {
+  animation: moveEyes 6s infinite;
+}
+
+@keyframes move {
+  20% {
+    transform: rotateY(10deg) rotateX(20deg);
+  }
+  40% {
+    transform: rotateY(25deg) rotateX(20deg);
+  }
+  60% {
+    transform: rotateY(-10deg) rotateX(-20deg);
+  }
+  85% {
+    transform: rotateY(-10deg) rotateX(-16deg);
+  }
+}
+
+.move-around {
+  animation: move 8s infinite;
+}
+
+.svg-container {
+  perspective: 1000px;
+}
